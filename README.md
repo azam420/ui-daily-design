@@ -1,2 +1,2 @@
-# ui-daily-design 
-Design converted inot code inspired From https://www.uidesigndaily.com/
+## ui-daily-design INTO code 
+Design converted int0 code inspired from by https://www.uidesigndaily.com/
