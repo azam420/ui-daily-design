@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Raleway', sans-serif;
     background-color: #E8F0FC;
     height: 100vh;
@@ -16,24 +17,45 @@ body{
     color: #0F1C52;
     font-weight: 400;
 }
-.profile-card{
+
+.profile-card {
     width: 700px;
-    background-color: #fff;
+    background-color: #fff !important; 
     border-radius: 30px;
     padding: 50px;
+    position: relative;
+    z-index: auto;
+
 }
-.profile-card .profile-card-top{
+
+.profile-card::before {
+    content: '';
+    position: absolute;
+    width: 650px;
+    height: 490px;
+    background-color: #CBC5F2;
+    border-radius: 30px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+}
+
+.profile-card .profile-card-top {
     display: flex;
     justify-content: space-between;
 }
-.profile-card .profile-card-top a{
+
+.profile-card .profile-card-top a {
     text-decoration: none;
     color: #0F1C52;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.profile-card .profile-card-top a .icon{
+
+.profile-card .profile-card-top a .icon {
     height: 35px;
     width: 35px;
     border: 1px solid #CCD1E6;
@@ -42,10 +64,84 @@ body{
     padding: 3px;
     margin-right: 10px;
 }
-.profile-card .profile-card-top a .icon img{
+
+.profile-card .profile-card-top a .icon img {
     width: 100%;
 }
-.profile-card .profile-card-top a .text{
+
+.profile-card .profile-card-top a .text {
     font-weight: 700;
     font-size: 18px;
+}
+
+.profile-card-data {
+    display: flex;
+    margin-top: 50px;
+}
+
+.profile-card-data .user-img {
+    width: 90px;
+    height: 90px;
+    background-color: #EBBBE4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #C41DAC;
+    font-weight: 700;
+}
+
+.profile-card-data .user-name {
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.profile-card-data .user-name span {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.profile-card-data .user-name .btn-follow {
+    width: 168px;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid #0F1C52;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0F1C52;
+}
+
+.profile-card-links {
+    margin-top: 50px;
+    display: flex;
+    border-top: 1px solid #CCD1E6;
+    border-bottom: 1px solid #CCD1E6;
+}
+
+.profile-card-links .link-btn {
+    height: 80px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #0F1C52;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.profile-card-links .link-btn img {
+    margin-left: 5px;
+}
+
+.profile-card-links .link-btn.active {
+    background-color: #DFDCF9;
 }
