@@ -8,3 +8,6 @@ https://www.uidesigndaily.com/license
 
 ### Profile Card
 https://codepen.io/mazam420/pen/dyNBmmv
+
+### Dark Themed Footer UI Design
+https://codepen.io/mazam420/pen/poezajy
