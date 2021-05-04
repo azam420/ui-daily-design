@@ -17,7 +17,7 @@ body {
     background-color: #23273C;
 }
 
-.footer{
+.footer {
     border-radius: 10px;
     background: #343953;
     max-width: 1200px;
@@ -26,33 +26,41 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.footer .logo{
+
+.footer .logo {
     font-size: 35px;
     color: #fff;
     font-weight: 900;
 }
-.footer-links{
+
+.footer-links {
     width: 50%;
 }
-.link-cols{
+
+.link-cols {
     display: flex;
     justify-content: space-between;
 }
-.footer-link-text,.btn-link-f{
+
+.footer-link-text,
+.btn-link-f {
     display: block;
 }
-.footer-link-text{
+
+.footer-link-text {
     color: #fff;
     font-size: 16px;
     font-weight: 600;
 }
-.btn-link-f{
+
+.btn-link-f {
     margin-top: 20px;
     color: #9BA7E5;
     font-size: 16px;
     text-decoration: none;
 }
-.btn-footer{
+
+.btn-footer {
     display: block;
     background-color: #2A2F46;
     width: 110px;
@@ -66,20 +74,24 @@ body {
     color: #FFFFFF;
     transition: .3s;
 }
-.btn-footer:hover{
+
+.btn-footer:hover {
     box-shadow: 1px 3px 10px rgba(35, 39, 60, 0.15);
     transform: translateY(-5px);
 }
-.footer-copyright{
+
+.footer-copyright {
     display: flex;
     justify-content: space-between;
     margin-top: 90px;
 }
-.copyright-text{
+
+.copyright-text {
     color: #9BA7E5;
     font-size: 16px;
 }
-.ex-link{
+
+.ex-link {
     color: #9BA7E5;
     font-size: 16px;
     text-decoration: none;
