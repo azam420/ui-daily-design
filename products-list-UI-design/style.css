@@ -12,7 +12,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
 .container {
@@ -20,6 +19,8 @@ body {
     max-width: 1200px;
     width: 100%;
     padding: 90px 60px;
+    margin: 100px 0;
+    border-radius: 32px;
 
 }
 
@@ -54,9 +55,6 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    border-width: 0 2px 0 2px;
-    /*      border: 1px solid #f1f1f1; */
-    border-color: #394a6d;
 }
 
 .custom-select__trigger {
@@ -64,7 +62,7 @@ body {
     max-width: 320px;
     width: 100%;
     display: flex;
-    padding:25px 30px;
+    padding: 25px 30px;
     align-items: center;
     justify-content: space-between;
     font-size: 18px;
@@ -81,19 +79,18 @@ body {
 .custom-options {
     position: absolute;
     display: block;
-    top: 100%;
+    top: 105%;
     left: 0;
     right: 0;
-    border: 2px solid #394a6d;
     border-top: 0;
-    background: #17b978;
+    background: #fff;
     transition: all 0.5s;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     z-index: 2;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .custom-select.open .custom-options {
@@ -106,7 +103,7 @@ body {
     position: relative;
     display: block;
     padding: 0 22px 0 22px;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
     color: #3b3b3b;
     line-height: 60px;
@@ -120,8 +117,7 @@ body {
 }
 
 .custom-option.selected {
-    color: white;
-    background-color: #17b978;
+    color: #0C1727;
     opacity: 0.8;
 }
 
@@ -131,36 +127,32 @@ body {
     width: 15px;
 }
 
-.arrow::before,
-.arrow::after {
+.arrow::before {
     content: "";
     position: absolute;
     bottom: 0px;
-    width: 0.15rem;
-    height: 100%;
-    transition: all 0.5s;
+    width: 20px;
+    height: 11px;
+    transition: all 0.2s;
+    background-image: url(imgs/icon-dropdown.svg);
+    background-size: contain;
 }
 
-.arrow::before {
+/* .arrow::before {
     left: -5px;
     transform: rotate(-45deg);
-    background-color: #0C1727;
+    background: #0C1727;
 }
 
 .arrow::after {
     left: 5px;
     transform: rotate(45deg);
     background-color: #0C1727;
-}
+} */
 
 .open .arrow::before {
     left: -5px;
-    transform: rotate(45deg);
-}
-
-.open .arrow::after {
-    left: 5px;
-    transform: rotate(-45deg);
+    transform: rotate(180deg);
 }
 
 .hidden {
@@ -168,3 +160,59 @@ body {
 }
 
 /* ----- Custom Select box Reference https://codepen.io/petrovmitko/pen/VwjLWXb --------*/
+
+.boxs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.boxs .box {
+    width: 32.5%;
+    background: linear-gradient(120.38deg, #F8F2FA 1.41%, #F9FAF2 100%);
+    border-radius: 5px;
+    padding: 50px;
+    text-align: center;
+}
+
+.icon-box {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+    line-height: 50px;
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box img {
+    width: 100%;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.btn-box {
+    margin:0px auto;
+    display: block;
+    width: 226px;
+    height: 46px;
+    line-height: 46px;
+    color: #fff;
+    font-size: 16px;
+    background: #0C1727;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: .3s;
+}
+.btn-box:hover {
+    box-shadow: 1px 3px 8px rgba(12, 23, 39, 0.12);
+
+}
