@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,121 @@
     <title>Products List UI Design</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <h2 class="section-heading">Browser Collections</h2>
-        <select name="" id="">
-            <option value="1">Search & Explore</option>
-            <option value="1">Search & Explore</option>
-            <option value="1">Search & Explore</option>
-            <option value="1">Search & Explore</option>
-        </select>
+        <div class="center">
+            <h2 class="section-heading">Browser Collections</h2>
+            <select class="select-opt" id="sel-opt">
+                <option value="sort-by">Search and Explore</option>
+                <option value="price">Option One</option>
+                <option value="mark">Option Two</option>
+                <option value="size">Option Three</option>
+                <option value="weight">Option Four</option>
+            </select>
+        </div>
+        <div class="boxs">
+            <div class="box">
+                <div class="icon-box">
+                    <img src="imgs/icon-search.svg" alt="">
+                </div>
+                <div class="title">Search</div>
+                <p class="paragraph">
+                    Search in any topic you are interested and find any answers you need.
+                </p>
+                <a href="#" class="btn-box">Learn more about Search</a>
+            </div>
+            <div class="box">
+                <div class="icon-box">
+                    <img src="imgs/icon-search.svg" alt="">
+                </div>
+                <div class="title">Search</div>
+                <p class="paragraph">
+                    Search in any topic you are interested and find any answers you need.
+                </p>
+                <a href="#" class="btn-box">Learn more about Search</a>
+            </div>
+            <div class="box">
+                <div class="icon-box">
+                    <img src="imgs/icon-search.svg" alt="">
+                </div>
+                <div class="title">Search</div>
+                <p class="paragraph">
+                    Search in any topic you are interested and find any answers you need.
+                </p>
+                <a href="#" class="btn-box">Learn more about Search</a>
+            </div>
+        </div>
     </div>
+
+
+
+
+    <script>
+        // Custom Select 
+        var theSelect = document.querySelector('#sel-opt');
+        var wrapper = document.createElement('div');
+        wrapper.classList.add('custom-select-wrapper');
+        var customSelect = document.createElement('div');
+        customSelect.classList.add('custom-select');
+        var customSelectTrigger = document.createElement('div');
+        customSelectTrigger.classList.add('custom-select__trigger');
+        var spanText = document.createElement('span');
+        spanText.textContent = 'Search & Explore';
+        var arrow = document.createElement('div');
+        arrow.classList.add('arrow');
+        customSelectTrigger.append(spanText, arrow);
+        customSelect.append(customSelectTrigger);
+        var customOptions = document.createElement('div');
+        customOptions.classList.add('custom-options');
+        var selectOptions = document.querySelectorAll('option');
+        for (var opt = 0; opt < selectOptions.length; opt++) {
+            var optSpan = document.createElement('span');
+            optSpan.classList.add('custom-option');
+            if (!opt) {
+                optSpan.classList.add('selected', 'hidden');
+            }
+            var thisVal = selectOptions[opt].value;
+            var thisText = selectOptions[opt].textContent;
+            optSpan.textContent = thisText;
+            optSpan.setAttribute('data_value', thisVal);
+            customOptions.append(optSpan);
+        }
+        customSelect.append(customOptions);
+        wrapper.append(customSelect);
+        var par = theSelect.parentNode;
+        par.append(wrapper);
+
+        document.querySelector('.custom-select-wrapper').addEventListener('click', function () {
+            this.querySelector('.custom-select').classList.toggle('open');
+        })
+        var option = document.querySelectorAll(".custom-option");
+        for (var i = 0; i < option.length; i++) {
+            option[i].addEventListener('click', function () {
+                this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
+                this.classList.add('selected');
+                this.closest('.custom-select').querySelector('.custom-select__trigger span').textContent = this
+                    .textContent;
+            });
+        }
+        window.addEventListener('click', function (e) {
+            var select = document.querySelector('.custom-select');
+            if (!select.contains(e.target)) {
+                select.classList.remove('open');
+            }
+        });
+
+        document.querySelector(".custom-select-wrapper").addEventListener('click', function () {
+            var choosenOption = document.querySelector(".selected").getAttribute('data-value');
+            var optionsSel = document.querySelectorAll('option');
+            for (var j = 0; j < optionsSel.length; j++) {
+                if (optionsSel[j].value == choosenOption) {
+                    optionsSel[j].selected = true;
+                    // alert(optionsSel[j].value);
+                }
+            }
+        });
+    </script>
 </body>
+
 </html>
