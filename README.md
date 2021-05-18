@@ -10,9 +10,11 @@ All the free items on this website are under Creative Commons license.
 ### Profile Card
 
 <https://codepen.io/mazam420/pen/dyNBmmv>
-  <a  href="https://codepen.io/mazam420/pen/dyNBmmv">
+  <p>
+  <a href="https://codepen.io/mazam420/pen/dyNBmmv">
     <img width="50%" src="https://m-azam.me/Hosted-assets/demo-imgs/profile-card.png" />
   </a>
+  <p>
 
 ### Dark Themed Footer UI Design
 
