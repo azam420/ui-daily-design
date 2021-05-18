@@ -6,11 +6,11 @@ Design converted int0 code inspired from by <https://www.uidesigndaily.com/>
 
 All the free items on this website are under Creative Commons license.
 <https://www.uidesigndaily.com/license>
-(assets/demo-imgs/profile-card.png)
 
 ### Profile Card
 
 <https://codepen.io/mazam420/pen/dyNBmmv>
+(<https://m-azam.me/Hosted-assets/demo-imgs/profile-card.png>)
 
 ### Dark Themed Footer UI Design
 
