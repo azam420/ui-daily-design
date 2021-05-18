@@ -10,7 +10,7 @@ All the free items on this website are under Creative Commons license.
 ### Profile Card
 
 <https://codepen.io/mazam420/pen/dyNBmmv>
-  <a href="https://codepen.io/mazam420/pen/dyNBmmv">
+  <a width="50%" href="https://codepen.io/mazam420/pen/dyNBmmv">
     <img src="https://m-azam.me/Hosted-assets/demo-imgs/profile-card.png" />
   </a>
 
