@@ -37,3 +37,8 @@ All the free items on this website are under Creative Commons license.
 ### Settings Modal UI Design
 
 <https://codepen.io/mazam420/pen/zYZKvEO>
+ <p>
+  <a href="https://codepen.io/mazam420/pen/zYZKvEO">
+    <img width="50%" src="https://m-azam.me/Hosted-assets/demo-imgs/settings-modal-UI-design.png" />
+  </a>
+  <p>
