@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,50 @@
     <title>Settings modal UI Design</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="modal">
+        <div class="modal-left">
+            <h3 class="modal-title">Edit structure</h3>
+            <p class="modal-text">Drag and drop items to build your structure.</p>
+
+            <div class="modal-list">
+                <a href="#" class="modal-list-item">
+                    <img src="imgs/icon-dots.svg" alt="">
+                    <span>Colour</span>
+                </a>
+                <a href="#" class="modal-list-item active">
+                    <img src="imgs/icon-dots.svg" alt="">
+                    <span>Company</span>
+                </a>
+                <a href="#" class="modal-list-item">
+                    <img src="imgs/icon-dots.svg" alt="">
+                    <span>Brand</span>
+                </a>
+                <a href="#" class="modal-list-item">
+                    <img src="imgs/icon-dots.svg" alt="">
+                    <span>Size</span>
+                </a>
+            </div>
+        </div>
+        <div class="modal-right">
+            <div class="modal-card">
+                <div class="modal-card-header">
+                    <span class="modal-card-header-title">Recently used</span>
+                    <a href="#" class="modal-card-header-link">See all</a>
+                </div>
+                <div class="card-tags">
+                    <div class="card-tag"> <span>Tags</span> <img src="imgs/icon-plus.svg" alt=""></div>
+                    <div class="card-tag"> <span>Style</span> <img src="imgs/icon-plus.svg" alt=""></div>
+                    <div class="card-tag"> <span>Material</span> <img src="imgs/icon-plus.svg" alt=""></div>
+                    <div class="card-tag"> <span>Position</span> <img src="imgs/icon-plus.svg" alt=""></div>
+                    <div class="card-tag"> <span>Attribute</span> <img src="imgs/icon-plus.svg" alt=""></div>
+                    <div class="card-tag"> <span>Warranty</span> <img src="imgs/icon-plus.svg" alt=""></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

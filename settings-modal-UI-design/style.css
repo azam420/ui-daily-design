@@ -1,6 +1,116 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #2A344A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.modal {
+    width: 980px;
+    height: auto;
+    padding: 60px 70px;
+    background-color: #232C3E;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-title {
+    color: #D2D8E5;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.modal-text {
+    color: #FFFFFF;
+    opacity: 0.5;
+    font-size: 18px;
+    margin-top: 10px;
+    letter-spacing: 0;
+}
+
+.modal-list {
+    margin-left: -25px;
+    margin-top: 60px;
+}
+
+.modal-list-item {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    text-decoration: none;
+    color: #D2D8E5;
+    font-size: 17px;
+    padding: 25px;
+}
+
+.modal-list-item.active {
+    background-color: #283348;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.modal-list-item img {
+    margin-right: 10px;
+}
+
+.modal-card {
+    background: #2A344A;
+    width: 330px;
+    padding: 30px;
+    border-radius: 17px;
+}
+
+.modal-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-card-header-title {
+    color: #D2D8E5;
+    font-size: 22px;
+}
+
+.modal-card-header-link {
+    color: #238DF7;
+    font-size: 17px;
+}
+
+.card-tags {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 200px;
+}
+
+.card-tag {
+    padding: 0px 10px 0 15px;
+    background: #232C3E;
+    color: #D2D8E5;
+    font-size: 16px;
+    margin: 0 10px 10px 0px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.card-tag span {
+    margin-right: 5px;
 }
