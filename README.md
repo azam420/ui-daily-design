@@ -16,7 +16,7 @@ All the free items on this website are under Creative Commons license.
   </a>
   <p>
 
-### Dark Themed Footer UI Design
+### Dark Themed Footer
 
 <https://codepen.io/mazam420/pen/poezajy>
  <p>
@@ -25,7 +25,7 @@ All the free items on this website are under Creative Commons license.
   </a>
   <p>
 
-### Products List UI Design
+### Products List
 
 <https://codepen.io/mazam420/pen/VwpLMyr>
  <p>
@@ -34,7 +34,7 @@ All the free items on this website are under Creative Commons license.
   </a>
   <p>
 
-### Settings Modal UI Design
+### Settings Modal
 
 <https://codepen.io/mazam420/pen/zYZKvEO>
  <p>
