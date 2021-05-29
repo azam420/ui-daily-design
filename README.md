@@ -1,6 +1,6 @@
 # UI-design-daily INTO code
 
-Design converted int0 code inspired from by <https://www.uidesigndaily.com/>
+Design converted into code inspired from <https://www.uidesigndaily.com/>
 
 ## License
 
